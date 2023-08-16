@@ -1,6 +1,6 @@
-import stripe from "stripe";
+import Stripe from "stripe";
 const stripeSecretKey = "sk_test_51NfjIYGeX3wi2NjaFBArkYpXGhmP2Um7sRqWrxlwHvg6JNN3RE16noGDAwZrj5agKk5SMN8tHzFxfXHGmWVfIIFM00UPBTIjAB";
-const stripeInstance = new stripe(stripeSecretKey);
+const stripe = new Stripe(stripeSecretKey);
 
 export default async (req, res, next) => {
   try {
